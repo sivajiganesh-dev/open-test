@@ -3,7 +3,6 @@ import java.util.*;
 public class SortByOccurrences {
     public static void main(String[] args) {
 
-        //Hard-coded sample data
         List<Integer> items;
 
         if(args.length > 0 && args[0].equals("1")){
@@ -16,10 +15,11 @@ public class SortByOccurrences {
 
         //Find out the occurrences of the numbers
         Map<Integer, Integer> countedNums = new HashMap<>();
-        items.parallelStream().forEach(integer -> {
+        items.stream().forEach(integer -> {
             int count = (countedNums.getOrDefault(integer, 0) + 1);
             countedNums.put(integer, count);
         });
+        
 
         //Map and Sort the occurrences-to-numbers
         SortedMap<Integer, List<Integer>> sortedCountedNums = new TreeMap<>();
