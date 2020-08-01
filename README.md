@@ -14,9 +14,9 @@ Default mode is hard-coded, to enable custom input provide single argument with 
 ## Compiling & Execution
 ### Sort
 ```
-[user@hostname open-test]$ cd sort/
-[user@hostname sort]$ javac SortByOccurrences.java
-[user@hostname sort]$ java SortByOccurrences [1]
+$ cd sort/
+$ javac SortByOccurrences.java
+$ java SortByOccurrences [1]
 
 ```
 [1] is optional and if provided program asks for user input. 
@@ -31,9 +31,9 @@ Example: ref below image
 
 ### Tree
 ```
-[user@hostname open-test]$ cd tree/
-[user@hostname tree]$ javac BinaryTreeTraversal.java 
-[user@hostname tree]$ java BinaryTreeTraversal [1]
+$ cd tree/
+$ javac BinaryTreeTraversal.java 
+$ java BinaryTreeTraversal [1]
 
 ```
 [1] is optional and if provided program asks for user input. 
